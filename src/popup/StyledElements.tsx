@@ -41,6 +41,7 @@ export const Header = styled.span`
 export const FlexContainer = styled.div`
   position: absolute;
   top: 0;
+  margin-bottom: 10px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -58,7 +59,6 @@ export const Body = styled.div`
   display: flex;
   overflow: auto;
   position: relative;
-  padding-bottom: 5px;
 `;
 export const Footer = styled.div`
   flex-shrink: 0;
