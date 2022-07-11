@@ -12,6 +12,8 @@ export const Overlay = styled.div`
   right: 0;
   z-index: 1000;
   height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   min-height: 100vh;
   background: rgba(12, 12, 13, 0.6);
 `;
