@@ -34,7 +34,7 @@ export const Header = styled.span`
   font-size: 1.5rem;
   font-weight: bold;
   flex-shrink: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   text-align: center;
   justify-content: center;
 `;
@@ -58,6 +58,7 @@ export const Body = styled.div`
   display: flex;
   overflow: auto;
   position: relative;
+  padding-bottom: 5px;
 `;
 export const Footer = styled.div`
   flex-shrink: 0;
