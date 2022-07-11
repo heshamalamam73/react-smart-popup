@@ -34,7 +34,7 @@ export const Header = styled.span`
   font-size: 1.5rem;
   font-weight: bold;
   flex-shrink: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   justify-content: center;
 `;

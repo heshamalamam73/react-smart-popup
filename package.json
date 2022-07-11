@@ -1,6 +1,6 @@
 {
   "name": "react-smart-popup",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "simple popup created with react and typescrypt and styled components ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,7 @@
     "minor": "npm version minor",
     "major": "npm version major",
     "patch": "npm version minor",
-    "prepare": "npm run patch && npm run build",
+    "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "publish": "npm publish",
     "preversion": "npm run lint",
