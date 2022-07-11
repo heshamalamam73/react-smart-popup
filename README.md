@@ -50,3 +50,18 @@ const App = () => {
   );
 };
 ```
+
+### Props
+
+| Property           | type      | Default Value | Description                           |
+| ------------------ | --------- | ------------- | ------------------------------------- |
+| isOpen             | Boolean   | false         | state of popup                        |
+| setIsOpen          | Func      |               | change state of popup                 |
+| children           | ReactNode |               | some children to show in popup body   |
+| handleSubmit       | Func      |               | on press submit button handler        |
+| handleClose        | Func      |               | on press close button handler         |
+| closeOnPressEscape | Boolean   | true          | close active popup when press esc key |
+| closeOnClickAway   | Boolean   | true          | close popup when click outside        |
+| width              | String    | '50%'         | popup width                           |
+| height             | String    | '50%'         | popup height                          |
+| header             | String    |               | popup header                          |

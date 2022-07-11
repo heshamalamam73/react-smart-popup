@@ -10,6 +10,7 @@ export type DialogProps = {
   closeOnClickAway?: boolean;
   width?: string;
   height?: string;
+  header?: string;
 };
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {

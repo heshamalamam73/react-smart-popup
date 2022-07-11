@@ -16,7 +16,10 @@ const getRootPopup = () => {
 };
 
 export const Popup = forwardRef<any, DialogProps>(
-  ({ isOpen, setIsOpen, handleSubmit, handleClose, closeOnPressEscape, closeOnClickAway, children, ...props }, ref) => {
+  (
+    { isOpen, setIsOpen, handleSubmit, handleClose, closeOnPressEscape, closeOnClickAway, header, children, ...props },
+    ref,
+  ) => {
     const contentRef = React.useRef<HTMLDivElement>(null);
 
     const onClickClose = useCallback(() => {
@@ -35,7 +38,7 @@ export const Popup = forwardRef<any, DialogProps>(
       () => (
         <Overlay>
           <Card width={props.width} height={props.height} ref={contentRef as RefObject<HTMLDivElement>}>
-            <Header>header</Header>
+            {header && <Header>{header}</Header>}
             <Body>
               <FlexContainer>{children}</FlexContainer>
             </Body>
@@ -58,6 +61,6 @@ export const Popup = forwardRef<any, DialogProps>(
 Popup.defaultProps = {
   closeOnClickAway: true,
   closeOnPressEscape: true,
-  width: '80%',
-  height: '80%',
+  width: '50%',
+  height: '50%',
 };
