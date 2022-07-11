@@ -4,7 +4,7 @@ test('Popup actions', () => {
   expect(Popup.defaultProps).toStrictEqual({
     closeOnClickAway: true,
     closeOnPressEscape: true,
-    width: '80%',
-    height: '80%',
+    width: '50%',
+    height: '50%',
   });
 });
